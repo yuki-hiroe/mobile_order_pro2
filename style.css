@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/*左側の操作エリア*/
+.left-panel {
+    width: 50%; /* 操作エリアの幅を60%に設定 */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-right: 2px solid #eee;
+}
+
+/* 右側のリストエリア */
+.right-panel {
+    width: 50%; /* リストエリアの幅を40%に設定 */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fafafa;
+    overflow-y: auto; /* リストが増えたらスクロール可能に */
+    color: red;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+.header img {
+    width: 100px;
+}
+
+.header h1 {
+    margin-left: auto;
+    font-size: 2rem;
+}
