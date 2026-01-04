@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .container {
@@ -44,4 +44,50 @@ body {
 .header h1 {
     margin-left: auto;
     font-size: 2rem;
+}
+
+/* --- モニター画面（表示側）のレスポンシブ設定 --- */
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* 左右並びを上下並びに変更 */
+    }
+
+    .left-panel, .right-panel {
+        width: 100%; /* 横幅をいっぱいに使う */
+        height: 50vh; /* 画面の半分ずつを占有するように設定 */
+        border-right: none;
+        box-sizing: border-box;
+    }
+
+    .left-panel {
+        border-bottom: 4px solid #eee; /* 上下の境界線を太めにする */
+    }
+
+    /* モニターなので文字サイズをスマホでも強調 */
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .header img {
+        width: 70px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        margin-top: 0;
+    }
+
+    /* 番号（h2）が並ぶエリアを調整 */
+    #mobile-number, #store-number {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    /* 番号自体のサイズ */
+    #input-mobile h2, #input-store h2 {
+        font-size: 2.5rem;
+        margin: 5px;
+    }
 }
