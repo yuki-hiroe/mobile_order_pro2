@@ -6,25 +6,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<Header class="header">
-    <img src="https://emotion-tech.co.jp/wp-content/uploads/2023/06/gongcha_logo_02.png" alt="ゴンチャ">
-    <h1>お呼び出し中の番号</h1>
-</Header>
-<div class="container">
-    <div id="mobile-container" class="left-panel">
-        <h2>モバイルオーダーお呼び出し中</h2>
-        <div id="mobile-number">
-            <h1 id="input-mobile"></h1>
-        </div>
-    </div>
-    <div id="store-container" class="right-panel">
-        <h2>店頭番号お呼び出し中</h2>
-        <div id="store-number">
-            <h1 id="input-store"></h1>
-        </div>
-    </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="index.js"></script>
+<div id="root"></div>
+<!--<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>-->
+<script type="module" src="./index.jsx"></script>
 </body>
 </html>
