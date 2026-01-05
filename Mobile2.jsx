@@ -60,12 +60,12 @@ export const Mobile2 = () => {
 
     return (
         <div className={'container'}>
-            <header className={"header"}>
+            <header className={"header"} style={{position: 'fixed', top: 0, left: 0, width: '100%', zIndex: 1000, backgroundColor: 'white', boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)'}}>
                 <img src="https://emotion-tech.co.jp/wp-content/uploads/2023/06/gongcha_logo_02.png" alt="ゴンチャ" />
-                    <h1>お呼び出し中の番号</h1>
+                    <h1 style={{ marginRight: '20px' }}>お呼び出し中の番号</h1>
             </header>
 
-            <main style={{ display: 'flex', justifyContent: 'space-around' }}>
+            <main style={{ display: 'flex', justifyContent: 'space-around', paddingTop: '100px' }}>
                 <section className={'left-panel'}>
                     <h2>モバイルオーダー</h2>
                     <div id="mobile-number">
